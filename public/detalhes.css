@@ -1,0 +1,77 @@
+section#cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 4rem 0 5rem 0;
+}
+section#cards h2{
+    width: 100%;
+    text-align: center;
+}
+section#cards div.card{
+    width: 20rem;
+    box-shadow: 5px 5px 5px 5px #00000015;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+section#cards div.card img{
+    width: 100%;
+}
+section#cards div.card h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+section#cards div.card .descricao{
+    text-align: justify;
+}
+section#cards div.card .tipo{
+    padding: .3rem;
+    width: 5rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.863);
+    border-radius: 20%;
+}
+section#cards div.card div#configuracoes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+section#cards div.card a#editar{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 20%;
+    padding: .6rem;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid rgba(46, 46, 255, 0.699);
+    color: rgba(46, 46, 255, 0.699);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+section#cards div.card a#apagar{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 20%;
+    padding: .6rem;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+section#cards div.card a#editar:hover{
+    background-color: rgba(46, 46, 255, 0.699);
+    color: white;
+}
+section#cards div.card a#apagar:hover{
+    background-color: red;
+    color: white;
+}
