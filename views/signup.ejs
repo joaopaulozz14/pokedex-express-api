@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <%- include('./components/head') %>
+</head>
+<body>
+        <%- include('./components/nav') %>
+        <header>
+            <img src="/img/banner.png" alt="">
+        </header>
+    <section id="cadastro">
+        <img src="./img/pokedex.png" alt="Pokedex">
+        <div>
+            <h2>Cadastre um novo Pokemon</h2>
+
+        <form action="/create" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="descricao">Descrição:</label>
+            <input type="text" name="descricao" id="formDescricao">
+
+            <label for="tipo">Tipo:</label>
+            <input type="text" name="tipo" id="tipo">
+
+            <label for="img">Imagem:</label>
+            <input type="text" name="img" id="img">  
+
+            <button id="btnCadastrar" type="submit">Cadastrar</button>
+        </form>
+        </div>
+    </section>
+    <%- include('./components/footer') %>
+</body>
+</html>
