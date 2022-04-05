@@ -1,0 +1,25 @@
+<section class="modal-overlay" id ="modal-overlay">
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h3>Atualizar Pokemon</h3>
+            <a href="/" id="close-modal-put"><i class="bi bi-x"></i></a>
+        </div>
+        <div class="modal-body">
+            <form class="form-modal" action="/update/<%= pokemonPut.id %>" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" value="<%= pokemonPut.nome %>">
+    
+                <label for="descricao">Descrição:</label>
+                <input type="text" name="descricao" id="formDescricao" value="<%= pokemonPut.descricao %>">
+    
+                <label for="tipo">Tipo:</label>
+                <input type="text" name="tipo" id="tipo" value="<%= pokemonPut.tipo %>">
+    
+                <label for="img">Imagem:</label>
+                <input type="text" name="img" id="img" value="<%= pokemonPut.img %>">  
+    
+                <button id="btnCadastrar" type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</section>

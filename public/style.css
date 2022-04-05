@@ -189,3 +189,117 @@ footer p a{
     color: white;
     font-weight: bold;
 }
+.modal-overlay{
+    background-color: #00000050;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.modal{
+    margin: 1rem;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #DC0A2D;
+    padding: 1rem;
+    color: white;
+}
+.modal-header a#close-modal-put{
+    color: white;
+    font-size: 1.4rem;
+}
+.modal-body{
+    padding: .5rem 1rem;
+    flex: 1rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.form-modal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-modal input{
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid #ccc;
+}
+.form-modal label{
+    color: rgb(112, 112, 112);
+    padding: .5rem;
+}
+.form-modal button{
+    padding: .6rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 1rem;
+    background-color: white;
+    color: rgba(46, 46, 255, 0.699);
+    border: 1px solid rgba(46, 46, 255, 0.699);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.form-modal button:hover{
+    background-color: rgba(46, 46, 255, 0.699);
+    color: #fff;
+}
+
+.modal-body p{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+div#btns-del{
+    display: flex;
+    margin: 0 auto;
+}
+div#btns-del{
+    padding: .7rem;
+    margin-top: 2rem ;
+    width: 100%;
+    justify-content: space-evenly;
+}
+div#btns-del a#no{
+    color: #DC0A2D;
+    border: 1px solid #DC0A2D;
+    transition: all .3s ease-in-out;
+    padding: .5rem;
+    border-radius: 3px;
+}
+div#btns-del a#no:hover{
+    color: white;
+    background-color: #DC0A2D;
+}
+div#btns-del a#yes{
+    color: rgba(46, 46, 255, 0.699);
+    border: 1px solid rgba(46, 46, 255, 0.699);
+    transition: all .3s ease-in-out;
+    padding: .5rem;
+    border-radius: 3px;
+}
+div#btns-del a#yes:hover{
+    color: white;
+    background-color: rgba(46, 46, 255, 0.699)
+}
